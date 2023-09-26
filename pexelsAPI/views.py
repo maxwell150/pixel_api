@@ -9,7 +9,7 @@ def homepage(request):
         PEXELS_API_KEY = ''
         # Create API object
         api = API(PEXELS_API_KEY)
-        # Search five 'kitten' photos
+        # Search photos
         api.search(f'{query}', page=1, results_per_page=5)
         # Get photo entries
         photos = api.get_entries()
